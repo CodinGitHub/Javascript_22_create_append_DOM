@@ -1,20 +1,17 @@
+// CREAR NODOS
 
-//Lectura de nodos
-const padre = document.querySelector('.padre');
+const parrafoCuatro = document.createElement('p');
+const textoParrafoCuatro = document.createTextNode('<h3>Párrafo 4</h3>');
+const parrafoCinco = document.createElement('p');
+parrafoCinco.innerHTML = '<h3>Párrafo 5</h3>';
 
-// Crear nodos
+//Seleccionar elemento padre
 
-const parrafo4 = document.createElement('p');
-const parrafo5 = document.createElement('p');
-parrafo4.innerHTML = 'Párrafo 4';
-// const textoParrafo4 = document.createTextNode('Párrafo 4');
-const textoParrafo5 = document.createTextNode('Párrafo 5');
+const elementoPadre = document.querySelector('.padre');
 
-// Agregar nodos
-// parrafo4.appendChild(textoParrafo4);
-parrafo5.appendChild(textoParrafo5);
+//AGREGAR NODOS
 
-parrafo4.setAttribute('class', 'parrafos')
-parrafo4.setAttribute('id', 'parrafo4')
-
-padre.append(parrafo4, parrafo5)
+// elementoPadre.appendChild(parrafoCuatro);
+parrafoCuatro.appendChild(textoParrafoCuatro);
+// elementoPadre.appendChild(parrafoCinco);
+elementoPadre.append(parrafoCuatro, parrafoCinco);

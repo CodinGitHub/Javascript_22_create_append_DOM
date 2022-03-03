@@ -1,9 +1,9 @@
-// CREAR NODOS
+//CREAR NODOS
 
 const parrafoCuatro = document.createElement('p');
-const textoParrafoCuatro = document.createTextNode('<h3>Párrafo 4</h3>');
+const textoParrafoCuatro = document.createTextNode('Párrafo 4');
 const parrafoCinco = document.createElement('p');
-parrafoCinco.innerHTML = '<h3>Párrafo 5</h3>';
+parrafoCinco.innerHTML = 'Párrafo 5';
 
 //Seleccionar elemento padre
 
